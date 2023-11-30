@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -186,14 +185,15 @@ button :hover {
     transition: 1s;
     width: 50%;
     position: absolute;
-    top: 50%;
-    left: 100%;
+    left: 35%;
+    top: 150%;
     transform: translateY(-50%);
     text-align: center;
     color: white
 }
 
 #hiddenContent.show {
+    top: 50%;
     left: 35%;
     transition: 1s;
 }
