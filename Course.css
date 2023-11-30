@@ -104,7 +104,7 @@ body {
     margin-bottom: 0px;
 }
 
-#content h1 a {
+#course {
     color: transparent;
     line-height: 69px;
     text-decoration: none;
@@ -117,7 +117,12 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-#content h1 a:hover {
+#course:hover {
+    background-position: -100%;
+    font-size: 75px;
+}
+
+#course.clicked {
     background-position: -100%;
     font-size: 75px;
 }

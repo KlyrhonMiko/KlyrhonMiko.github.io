@@ -9,10 +9,12 @@ course.onclick = function() {
         content.className = "";
         computer.className = "";
         hiddenContent.className = "";
+        course.className = "";
     } else {
         content.className = "left";
         computer.className= "left"
         hiddenContent.className = "show";
+        course.className = "clicked";
     }
 }
 
