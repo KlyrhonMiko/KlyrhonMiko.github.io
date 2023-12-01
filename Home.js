@@ -8,9 +8,11 @@ button.onclick = function () {
         content.className = "";
         hiddenContent.className = "";
         main.className = "";
+        button.className = "";
     } else {
         content.className = "clicked";
         hiddenContent.className = "show";
         main.className = "clicked";
+        button.className = "clicked";
     }
 }
