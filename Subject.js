@@ -4,6 +4,7 @@ var main = document.getElementById("main")
 var move = document.getElementById("move")
 var hiddenContent = document.getElementById("hiddenContent")
 var buttonMargin = document.getElementById("buttonMargin")
+var logo = document.getElementById("computingLogo")
 button.onclick = function () {
     if (content.className == "clicked") {
         content.className = "";
@@ -12,6 +13,7 @@ button.onclick = function () {
         hiddenContent.className = "";
         move.className = "";
         buttonMargin.className = "";
+        logo.className = "";
     } else {
         content.className = "clicked";
         main.className = "clicked";
@@ -19,5 +21,6 @@ button.onclick = function () {
         hiddenContent.className = "show";
         move.className = "clicked";
         buttonMargin.className = "clicked";
+        logo.className = "show";
     }
 }
