@@ -77,7 +77,7 @@ body {
     width: 100%;
 }
 
-.content {
+#content {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -86,13 +86,22 @@ body {
     color: white;
 }
 
-.content h1 {
+#content h1 {
     font-size: 70px;
     margin-top: 80px;
     margin-bottom: 0px;
 }
 
-.content h1 a {
+#top {
+    transition: 1s;
+}
+
+#top.clicked {
+    transition: 1s;
+    margin-bottom: 400px;
+}
+
+#content h1 a {
     color: transparent;
     line-height: 69px;
     text-decoration: none;
@@ -105,12 +114,12 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.content h1 a:hover {
+#content h1 a:hover {
     background-position: -100%;
     font-size: 75px;
 }
 
-.content p a {
+#content p a {
     color: transparent;
     text-decoration: none;
     position: relative;
@@ -122,7 +131,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.content p a:hover{
+#content p a:hover{
     background-position: -100%;
     font-size: 18px;
 }
