@@ -82,6 +82,7 @@ body {
 }
 
 #content {
+
     transition: 1s;
     width: 100%;
     position: absolute;
@@ -122,9 +123,19 @@ body {
     font-size: 75px;
 }
 
+
 #course.clicked {
-    background-position: -100%;
+    animation: contentAnimation 10s infinite;
     font-size: 75px;
+}
+
+@keyframes contentAnimation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -200%;
+    }
 }
 
 #content p a {
@@ -189,18 +200,21 @@ button :hover {
 }
 
 #hiddenContent {
+    font-family: sans-serif;
+    font-size: 18px;
+    overflow: hidden;
     transition: 1s;
     width: 50%;
     position: absolute;
     left: 150%;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
+    text-align: justify;
     color: white
 }
 
 #hiddenContent.show {
-    left: 45%;
+    left: 40%;
     transition: 1s;
 }
 
