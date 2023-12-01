@@ -10,6 +10,8 @@ body {
     background-image: linear-gradient(rgb(0, 18, 0 ,0.75),rgba(0,18,0,0.9)), url(background.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .navbar {
@@ -92,14 +94,31 @@ body {
     top: 30%;
 }
 
-#content h1 {
+#course:hover {
+    animation: contentAnimation 10s infinite;
+    font-size: 75px;
+}
+
+@keyframes contentAnimation {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: -200%;
+    }
+}
+
+#main{
     font-size: 70px;
     margin-top: 80px;
     margin-bottom: 0px;
 }
 
 
-#content h1 a {
+#main {
     color: transparent;
     line-height: 69px;
     text-decoration: none;
@@ -112,9 +131,26 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-#content h1 a:hover {
+#main:hover {
     background-position: -100%;
     font-size: 75px;
+}
+
+#main.clicked {
+    animation: contentAnimation 10s infinite;
+    font-size: 75px;
+}
+
+@keyframes contentAnimation {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: -200%;
+    }
 }
 
 #content p a {
@@ -132,6 +168,21 @@ body {
 #content p a:hover{
     background-position: -100%;
     font-size: 18px;
+}
+
+#hiddenContent{
+    transition: 1s;
+    text-align: justify;
+    position: absolute;
+    color: white;
+    width: 80%;
+    left: 10%;
+    top: 100%;
+}
+
+#hiddenContent.show {
+    transition: 1s;
+    top: 50%;
 }
 
 button {
