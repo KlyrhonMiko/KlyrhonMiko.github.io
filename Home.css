@@ -247,6 +247,7 @@ button :hover {
     }
 
     #hiddenContent.show {
+        transition: 1s;
         top: 40%;
     }
 }

@@ -285,6 +285,7 @@ button :hover {
     }
 
     #computingLogo {
+        transition: 1s;
         top: 20%;
     }
 }
