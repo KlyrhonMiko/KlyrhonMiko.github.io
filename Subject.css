@@ -161,6 +161,10 @@ body {
     color: white;
     transition: 0.6s;
 }
+#buttonMargin {
+    transition: 1s;
+
+}
 
 #buttonMargin.clicked {
     transition: 1s;
@@ -281,7 +285,7 @@ button :hover {
     }
     #buttonMargin.clicked {
         transition: 1s;
-        margin-top: 30%;  
+        margin-top: 25%;  
     }
 
     #computingLogo {
