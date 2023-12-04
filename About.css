@@ -77,97 +77,39 @@ body {
     width: 100%;
 }
 
-.content {
-    width: 100%;
+#content {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
+    overflow: hidden;
+    left: 5%;
+    top: 20%;
 }
 
-.content h1 {
-    font-size: 70px;
-    margin-top: 80px;
-    margin-bottom: 0px;
-}
-
-.content h1 a {
-    color: transparent;
-    line-height: 69px;
+#content a {
     text-decoration: none;
-    position: relative;
-    background: linear-gradient(to right, white 50%, rgb(0, 100, 0) 50%, rgb(0, 150, 0));
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.5s ease-in-out;
 }
 
-.content h1 a:hover {
-    background-position: -100%;
-    font-size: 75px;
-}
-
-.content p a {
-    color: transparent;
-    text-decoration: none;
-    position: relative;
-    background: linear-gradient(to right, white 50%, rgb(0, 100, 0) 50%, rgb(0, 150, 0));
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.5s ease-in-out;
-}
-
-.content p a:hover{
-    background-position: -100%;
-    font-size: 18px;
-}
-
-button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    position: relative;
+#mainCrop {
+    display: inline-block;
     overflow: hidden;
 }
 
-span {
-    background: rgba(0, 90, 0, 0.75);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0; 
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
+#main {
+    transition: 1s;
+    margin: 0 -200px 0 -200px;
 }
 
-button:hover span {
-    width: 100%;
+#mainCrop #main.show { 
+    transition: 1s;
+    margin: 0;
 }
 
-button :hover {
-    border: none;
-}
+
 
 @media screen and (max-width: 1060px) {
     .nav { 
         display: block;
         margin-left: 5%;
         margin-right: 5%;
-
         padding-top: 2px;
     }
     .navbar {
