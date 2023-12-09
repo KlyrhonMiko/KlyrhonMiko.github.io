@@ -95,18 +95,6 @@ body {
     font-size: 75px;
 }
 
-@keyframes contentAnimation {
-    0% {
-        background-position: 0%;
-    }
-    50% {
-        background-position: -100%;
-    }
-    100% {
-        background-position: -200%;
-    }
-}
-
 #main{
     font-size: 70px;
     margin-top: 80px;
@@ -193,15 +181,13 @@ body {
     transition: 1s;
     transform: scaleY(100%);
 }
+
 @keyframes contentAnimation {
     0% {
         background-position: 0%;
     }
-    50% {
-        background-position: -100%;
-    }
     100% {
-        background-position: -200%;
+        background-position: -300%;
     }
 }
 

@@ -8,7 +8,6 @@ var slideshow = document.getElementById("scroll")
 
 
 content.onclick = function() {
-
     if (main.className == "show") {
         main.className = "";
         mainContent.className = "";

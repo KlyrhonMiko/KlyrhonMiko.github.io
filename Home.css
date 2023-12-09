@@ -94,22 +94,6 @@ body {
     top: 30%;
 }
 
-#course:hover {
-    animation: contentAnimation 10s infinite;
-    font-size: 75px;
-}
-
-@keyframes contentAnimation {
-    0% {
-        background-position: 0%;
-    }
-    50% {
-        background-position: -100%;
-    }
-    100% {
-        background-position: -200%;
-    }
-}
 
 #main{
     font-size: 70px;
@@ -145,14 +129,10 @@ body {
     0% {
         background-position: 0%;
     }
-    50% {
-        background-position: -100%;
-    }
     100% {
-        background-position: -200%;
+        background-position: -300%;
     }
 }
-
 #content p a {
     color: transparent;
     text-decoration: none;
