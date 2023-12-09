@@ -31,84 +31,128 @@ kly.onclick = function() {
     if (klyAct.className == "show") {
         kly.className = "";
         klyAct.className = "";
+        ed.className= "";
         edAct.className = "";
+        vin.className = "";
         vinAct.className = "";
+        chez.className = "";
         chezAct.className = "";
+        ella.className = "";
         ellaAct.className = "";
     }   else {
-        klyAct.className = "show";
         kly.className = "clicked";
+        klyAct.className = "show";
+        ed.className= "";
         edAct.className = "";
-        ed.className = "";
-        vinAct.className = "";
-        chezAct.className = "";
-        ellaAct.className = "";
         vin.className = "";
+        vinAct.className = "";
         chez.className = "";
+        chezAct.className = "";
         ella.className = "";
+        ellaAct.className = "";
     }
 }
 
 ed.onclick = function() {
     if (edAct.className == "show") {
-        ed.className = "";
-        edAct.className = "";
+        kly.className = "";
         klyAct.className = "";
+        ed.className= "";
         edAct.className = "";
+        vin.className = "";
         vinAct.className = "";
+        chez.className = "";
         chezAct.className = "";
+        ella.className = "";
         ellaAct.className = "";
     }   else {
         kly.className = "";
         klyAct.className = "";
+        ed.className= "clicked";
         edAct.className = "show";
-        ed.className = "clicked";
-        vinAct.className = "";
-        chezAct.className = "";
-        ellaAct.className = "";
         vin.className = "";
+        vinAct.className = "";
         chez.className = "";
+        chezAct.className = "";
         ella.className = "";
+        ellaAct.className = "";
     }
 }
 
 vin.onclick = function() {
     if (vinAct.className == "show") {
+        kly.className = "";
+        klyAct.className = "";
+        ed.className= "";
+        edAct.className = "";
         vin.className = "";
         vinAct.className = "";
-    }   else {
-        vinAct.className = "show";
-        kly.className = "";
-        ed.className = "";
-        vin.className = "clicked";
         chez.className = "";
+        chezAct.className = "";
         ella.className = "";
+        ellaAct.className = "";
+    }   else {
+        kly.className = "";
+        klyAct.className = "";
+        ed.className= "";
+        edAct.className = "";
+        vin.className = "clicked";
+        vinAct.className = "show";
+        chez.className = "";
+        chezAct.className = "";
+        ella.className = "";
+        ellaAct.className = "";
     }
 }
 
 chez.onclick = function() {
     if (chezAct.className == "show") {
+        kly.className = "";
+        klyAct.className = "";
+        ed.className= "";
+        edAct.className = "";
+        vin.className = "";
+        vinAct.className = "";
         chez.className = "";
         chezAct.className = "";
-    }   else {
-        chezAct.className = "show";
-        kly.className = "";
-        ed.className = "";
-        vin.className = "";
-        chez.className = "clicked";
         ella.className = "";
+        ellaAct.className = "";
+    }   else {
+        kly.className = "";
+        klyAct.className = "";
+        ed.className= "";
+        edAct.className = "";
+        vin.className = "";
+        vinAct.className = "";
+        chez.className = "clicked";
+        chezAct.className = "show";
+        ella.className = "";
+        ellaAct.className = "";
     }
 }
 
 ella.onclick = function() {
     if (ellaAct.className == "show") {
+        kly.className = "";
+        klyAct.className = "";
+        ed.className= "";
+        edAct.className = "";
+        vin.className = "";
+        vinAct.className = "";
+        chez.className = "";
+        chezAct.className = "";
         ella.className = "";
         ellaAct.className = "";
     }   else {
-        ellaAct.className = "show";
         kly.className = "";
+        klyAct.className = "";
+        ed.className= "";
+        edAct.className = "";
         vin.className = "";
+        vinAct.className = "";
         chez.className = "";
+        chezAct.className = "";
         ella.className = "clicked";
+        ellaAct.className = "show";
     }
 }
