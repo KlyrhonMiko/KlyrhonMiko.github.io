@@ -85,14 +85,13 @@ body {
     transition: 1s;
     width: 100%;
     position: relative;
-    top: 25%;
+    top: 30%;
     transform: translateY(-50%);
     text-align: center;
     color: white
 }
 
 #content.left {
-    top: 30%;
     transition: 1s;
     width: 0%;
     margin: 2%;
@@ -204,10 +203,9 @@ button :hover {
     overflow: hidden;
     transition: 1s;
     width: 50%;
-    position: absolute;
+    position: relative;
     left: 150%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -61%;
     text-align: justify;
     color: white
 }

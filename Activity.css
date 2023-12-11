@@ -570,7 +570,7 @@ body {
 
     #klyAct {
         margin-right: 0;
-        top: 15%;
+        top: 300px;
     }
 
     #klyAct.show {
@@ -579,7 +579,7 @@ body {
     
     #edAct {
         margin-right: 0;
-        top: -10%;
+        top: -223px;
     }
 
     #edAct.show {
@@ -588,7 +588,7 @@ body {
 
     #vinAct {
         margin-right: 0;
-        top: -34%;
+        top: -733px;
     }
 
     #vinAct.show {
@@ -597,7 +597,7 @@ body {
 
     #chezAct {
         margin-right: 0;
-        top: -58%;
+        top: -1243px;
     }
 
     #chezAct.show {
@@ -606,7 +606,7 @@ body {
 
     #ellaAct {
         margin-right: 0;
-        top: -82%;
+        top: -1752px;
     }
 
     #ellaAct.show {
@@ -621,5 +621,14 @@ body {
     #members ul li:hover::after {
         left: 25%;
         width: 50%;
+    }
+
+    #content.show {
+        transition: 1s;
+        top: 5%;
+    }
+
+    #members.show {
+        top: 5%;
     }
 }

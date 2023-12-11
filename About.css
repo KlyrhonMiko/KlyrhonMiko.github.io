@@ -257,7 +257,7 @@ button :hover {
     }
     .navbar {
         text-align: center;
-        display: inline;
+        display: inline-b;
         width: 100%;
     }
 
@@ -269,18 +269,9 @@ button :hover {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 20px;
+        margin-bottom: 2x0px;
         padding-top: 10px;
     }
 
-    #content.secondShow {
-        transition: 1s;
-        left: 15%;
-        top: 30%;
-    }
-    
-    #hiddenContent {
-        margin-bottom: -40%;
-    }
 
 }
