@@ -257,7 +257,7 @@ button :hover {
     }
     .navbar {
         text-align: center;
-        display: inline-b;
+        display: inline-block;
         width: 100%;
     }
 
@@ -273,5 +273,8 @@ button :hover {
         padding-top: 10px;
     }
 
+    #hiddenContent.show {
+        height: 500px;
+    }
 
 }
