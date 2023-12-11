@@ -133,6 +133,19 @@ body {
         background-position: -400%;
     }
 }
+
+#wrapper {
+    transition: 1s;
+    position: relative;
+    display: flex;
+    top: 100%;
+}
+
+#wrapper.show {
+    transition: 1s;
+    top: 0%;
+}
+
 #content p a {
     color: transparent;
     text-decoration: none;
@@ -158,11 +171,6 @@ body {
     transition: 1s;
 }
 
-#hiddenImage.show {
-    top: 2%;
-    transition: 1s;
-}
-
 #hiddenImage img{   
     width: 200px;
 }
@@ -175,16 +183,11 @@ body {
     position: relative;
     color: white;
     width: 60%;
-    left: 30%;
-    top: 100%;
+    left: 250px;
     max-height: 200px;
     
 }
 
-#hiddenContent.show {
-    transition: 1s;
-    top: -25%;
-}
 
 button {
     width: 200px;
@@ -267,8 +270,18 @@ button :hover {
         padding-top: 10px;
     }
 
-    #hiddenContent.show {
+    #content.clicked {
         transition: 1s;
-        top: 40%;
+        top: 20%;
+    }
+
+    #wrapper.show {
+        transition: 1s;
+        top: 20%;
+    }
+    
+    #hiddenContent {
+        left: 150px;
+        max-height: 1100px;
     }
 }

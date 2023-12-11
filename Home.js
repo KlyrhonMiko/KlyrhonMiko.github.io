@@ -3,19 +3,16 @@ var button = document.getElementById("button")
 var hiddenContent = document.getElementById("hiddenContent")
 var main = document.getElementById("main")
 var hiddenImage = document.getElementById("hiddenImage")
+var wrapper = document.getElementById("wrapper")
 
 button.onclick = function () {
-    if (content.className == "clicked") {
-        content.className = "";
-        hiddenContent.className = "";
+    if (wrapper.className == "show") {
+        wrapper.className = "";
         main.className = "";
-        button.className = "";
-        hiddenImage.className = "";
+        content.className = "";
     } else {
-        content.className = "clicked";
-        hiddenContent.className = "show";
+        wrapper.className = "show";
         main.className = "clicked";
-        button.className = "clicked";
-        hiddenImage.className = "show";
+        content.className = "clicked";
     }
 }
