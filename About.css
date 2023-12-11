@@ -80,7 +80,7 @@ body {
 }
 
 #content {  
-    position: absolute;
+    position: relative;
     overflow: hidden;
     left: 5%;
     top: 20%;
@@ -112,38 +112,39 @@ body {
     width: 85%;
     overflow: hidden;
     color: white;
-    margin-bottom: -24%;
+    height: 0;
 }
 
 #hiddenContent.show {
     transition: 1s;
-    margin-bottom: 0;
+    height: 300px;
 }
 #hiddenContent.secondShow {
     overflow: hidden;
     transition: 1s;
     margin-left: -100%;
-    margin-bottom: 0;
+
 }
 
 #hiddenContent p {
     font-size: 16px;
 }
+
 #content {
     transition: 1s;
     left: 15%;
     width: 85%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 30%;
     transform: translateY(-50%);
     text-align: center;
     color: white;
 }
 
 #content.secondShow {
+    top: 60px;
     transition: 1s;
     left: 15%;
-    top: 45%;
 }
 
 #missuLogo {
@@ -192,7 +193,6 @@ button :hover {
     position: relative;
     display: flex;
     overflow-x: auto;
-    top: 20%;
 }
 
 #scroll.show {

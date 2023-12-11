@@ -84,15 +84,15 @@ body {
 #content {
     transition: 1s;
     width: 100%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 25%;
     transform: translateY(-50%);
     text-align: center;
     color: white
 }
 
 #content.left {
-    top: 50%;
+    top: 30%;
     transition: 1s;
     width: 0%;
     margin: 2%;
@@ -155,6 +155,7 @@ body {
 #content p.left{
     transition: 1s;
     width: 231px;
+    
 }
 
 #content p a:hover{

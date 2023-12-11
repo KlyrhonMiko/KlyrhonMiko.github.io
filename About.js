@@ -6,13 +6,12 @@ var hide = document.getElementById("hiddenContent")
 var button = document.getElementById("button")
 var slideshow = document.getElementById("scroll")
 
-
 content.onclick = function() {
     if (main.className == "show") {
         main.className = "";
         mainContent.className = "";
-        slideshow.className = "";  
         hide.className = "";   
+        slideshow.className = "";   
     }  else {
         main.className = "show";
         hide.className = "show";
