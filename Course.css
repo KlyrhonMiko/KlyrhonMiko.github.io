@@ -81,22 +81,11 @@ body {
     width: 100%;
 }
 
-#wrapper {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    display: flex;
-    max-height: 900px;
-}
-
 #content {
-    left: 20%;
     transition: 1s;
     width: 100%;
-    position: relative;
     text-align: center;
     color: white;
-    transform: translateY(15%);
 }
 
 #content.left {
@@ -104,8 +93,6 @@ body {
     padding-top: 0;
     transition: 1s;
     width: 0%;
-    margin: 2%;
-    transform: translateY(-10%);
 }
 
 #content h1 {
@@ -171,6 +158,19 @@ body {
     font-size: 18px;
 }
 
+#wrap {
+    transition: 0.5s;
+    top: 16%;
+    width: 200%;
+    display: flex;
+    position: relative;
+}
+
+#wrap.show {
+    transition: 1.5 s;
+    top: 0;
+}
+
 button {
     width: 200px;
     padding: 15px 0;
@@ -207,20 +207,20 @@ button :hover {
 }
 
 #hiddenContent {
+    position: relative;
     font-family: sans-serif;
     font-size: 18px;
     overflow: hidden;
+    width: 100%;
     transition: 1s;
-    width: 50%;
-    position: relative;
-    left: 150%;
     text-align: justify;
-    color: white
+    color: white;
 }
 
 #hiddenContent.show {
-    left: 40%;
     transition: 1s;
+    left: 23%;
+    width: 25%;
 }
 
 @media screen and (max-width: 1060px) {
@@ -248,7 +248,4 @@ button :hover {
         padding-top: 10px;
     }
 
-    #wrapper {
-        top: 20%;
-    }
 }

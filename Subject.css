@@ -233,7 +233,7 @@ button :hover {
 }
 
 @media screen and (max-width: 1060px) {
-    .nav { 
+    .nav {
         display: block;
         margin-left: 5%;
         margin-right: 5%;
