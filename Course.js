@@ -16,6 +16,6 @@ button2.onclick = function() {
         content.className   = "left";
         computer.className= "left"
         hiddenContent.className = "show";
-        wrap.cl assName = "show";
+        wrap.className = "show";
     }
 }
