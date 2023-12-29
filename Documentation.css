@@ -148,39 +148,56 @@ body {
     opacity: 0;
 }
 
-button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+#documentation {
+    transition: 1s;
+    transform: translateY(150%);
+    overflow: auto;
 }
 
-span {
-    background: rgba(0, 90, 0, 0.75);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0; 
-    bottom: 0;
-    z-index: -1;
+#documentation.show {
+    transition: 1s;
+    transform: translateY(7%);
+}
+
+#documentation img{
     transition: 0.5s;
+    padding-right: 10px;
+    width: 400px;
 }
 
-button:hover span {
-    width: 100%;
+#documentation ul{
+    list-style: none;
+    display: flex;
 }
 
-button :hover {
-    border: none;
+#documentation a:hover img {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+#documentation ul li:hover .text {
+    transition: 0.5s;
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+#documentation ul li .text {
+    color: white;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-30px);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#documentation ul li .text span {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @media screen and (max-width: 1060px) {
